@@ -1,0 +1,308 @@
+.auth-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  padding-block: 70px 110px;
+  max-width: 1150px;
+}
+.auth-illustration {
+  height: 550px;
+  border: var(--border);
+  border-radius: 200px 200px 28px 28px;
+  background: var(--warm-surface);
+  box-shadow: var(--shadow);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-illustration > img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+.auth-illustration > .daisy {
+  position: absolute;
+  left: -30px;
+  top: 80px;
+  width: 95px;
+  transform: rotate(-15deg);
+}
+.auth-illustration > span {
+  position: absolute;
+  bottom: 32px;
+  font-family: Fredoka, sans-serif;
+  font-size: 24px;
+  transform: rotate(-4deg);
+}
+.auth-form h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.auth-form > p {
+  font-size: 14px;
+}
+.preview-info {
+  font-size: 13px;
+  padding: 15px;
+  background: var(--warm-surface);
+  border-radius: 14px;
+  margin: 25px 0;
+  line-height: 1.65;
+}
+.auth-forgot {
+  display: flex;
+  justify-content: end;
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+.auth-switch {
+  text-align: center;
+  margin-top: 25px;
+}
+.auth-switch a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.auth-form .small {
+  font-size: 13px;
+}
+.account-layout {
+  display: grid;
+  grid-template-columns: 235px 1fr;
+  gap: 70px;
+}
+.account-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+  position: sticky;
+  top: 125px;
+  height: max-content;
+}
+.account-avatar {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  background: var(--pink);
+  border: var(--border);
+  border-radius: 50%;
+  font-family: Fredoka, sans-serif;
+  font-size: 26px;
+}
+.account-nav > .small {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  margin-top: -10px;
+}
+.account-nav > button,
+.account-nav > a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.account-nav > button.active {
+  background: var(--warm-surface);
+  border: 2px solid var(--ink);
+}
+.account-nav > button:last-child {
+  margin-top: 25px;
+}
+.account-content h2 {
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+.account-content > .section-heading h2 {
+  margin: 0;
+}
+.account-orders {
+  display: grid;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.account-order {
+  border: 2px solid var(--ink);
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+}
+.account-order > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.account-order > p {
+  font-size: 13px;
+  margin: 15px 0;
+}
+.account-order > div > .text-link {
+  font-size: 13px;
+}
+.address-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.address-cards > article {
+  padding: 25px;
+  background: white;
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+}
+.address-cards h3 {
+  font-size: 23px;
+}
+.address-cards p {
+  font-size: 13px;
+  margin: 15px 0;
+}
+.address-cards article > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-form {
+  max-width: 500px;
+}
+.account-privacy {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 40px;
+  max-width: 600px;
+}
+.account-privacy h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.account-privacy p {
+  font-size: 13px;
+}
+.track-page {
+  max-width: 1050px;
+}
+.track-page > .page-heading {
+  text-align: center;
+}
+.tracking-form {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr auto;
+  align-items: end;
+  gap: 20px;
+  padding: 30px;
+  background: white;
+  border: var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+.tracking-form .field {
+  margin: 0;
+}
+.tracking-form > .button {
+  min-height: 50px;
+  padding-inline: 22px;
+}
+.track-page > .small {
+  margin-top: 25px;
+}
+.track-help {
+  text-align: center;
+  margin-top: 60px;
+}
+.track-help p {
+  margin: 0;
+}
+.track-help > a {
+  font-size: 14px;
+}
+.tracking-result {
+  margin-top: 55px;
+  padding: 35px;
+  border: var(--border);
+  border-radius: 25px;
+  background: white;
+}
+.tracking-result h2 {
+  font-size: 35px;
+}
+.tracking-result .section-heading {
+  margin-bottom: 25px;
+}
+.tracking-timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  list-style: none;
+  padding: 30px 0 35px;
+  margin: 0;
+}
+.tracking-timeline > li {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.tracking-timeline > li:not(:last-child)::after {
+  content: "";
+  height: 3px;
+  background: var(--cream);
+  position: absolute;
+  left: 40px;
+  right: 0;
+  top: 20px;
+  z-index: -1;
+}
+.tracking-timeline > li.done::after {
+  background: var(--accent);
+}
+.tracking-timeline li > span {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  font-size: 14px;
+}
+.tracking-timeline li.done > span {
+  background: var(--accent);
+}
+.tracking-timeline li > div {
+  margin-top: 18px;
+}
+.tracking-timeline li strong {
+  display: block;
+  font-size: 14px;
+}
+.tracking-timeline li small {
+  display: block;
+  font-size: 13px;
+  margin-top: 6px;
+}
+.tracking-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 15px 0 30px;
+}
+.tracking-details h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+.tracking-details p {
+  font-size: 13px;
+}

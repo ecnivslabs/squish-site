@@ -1,0 +1,87 @@
+.product-photo > .product-picture {
+  height: 100%;
+}
+.product-squish-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--cream);
+}
+.hidden-video {
+  display: none;
+}
+.product-video-controls {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.product-video-controls .squish-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 16px;
+  border: 2px solid var(--ink);
+  border-radius: 50px;
+  background: var(--cream);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
+}
+.product-video-controls .squish-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+.product-video-controls .text-link {
+  font-size: 13px;
+}
+.media-error {
+  margin: 18px 0 0;
+  color: #9c302d;
+}
+.product-video-upload {
+  margin-top: 25px;
+  padding: 22px;
+  background: white;
+  border-radius: 20px;
+}
+.product-video-upload .field {
+  margin: 0;
+}
+.product-video-upload input {
+  font-size: 13px;
+}
+.product-video-upload small {
+  font-weight: 500;
+  font-size: 13px;
+}
+.attached-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+  font-size: 13px;
+}
+.attached-video > span {
+  overflow-wrap: anywhere;
+}
+.attached-video > button {
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .product-video-controls {
+    gap: 15px;
+  }
+  .product-video-upload {
+    padding: 18px;
+  }
+  .attached-video {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

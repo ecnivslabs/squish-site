@@ -1,0 +1,223 @@
+.site-footer {
+  background: var(--accent-soft);
+  border-top: var(--border);
+  overflow: hidden;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.1fr;
+  gap: 40px;
+  padding-block: 60px 40px;
+}
+.footer-top h3 {
+  font-size: 18px;
+  margin: 10px 0 23px;
+}
+.footer-top > div > a:not(.wordmark) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-block: 13px;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+}
+.footer-brand > p {
+  margin: 18px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-big {
+  font-family: Fredoka, sans-serif;
+  font-size: clamp(55px, 9vw, 138px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  line-height: 1.05;
+  padding: 15px 30px 38px;
+  white-space: nowrap;
+}
+.footer-big > .daisy {
+  width: 7vw;
+  flex-shrink: 0;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding-block: 20px 28px;
+  font-size: 13px;
+}
+.footer-bottom > div {
+  display: flex;
+  gap: 24px;
+}
+.shop-intro {
+  padding: 65px 0 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shop-intro h1 {
+  font-size: 66px;
+}
+.shop-intro p {
+  margin: 20px 0 0;
+}
+.shop-intro > .daisy {
+  width: 100px;
+  margin-right: 50px;
+  transform: rotate(14deg);
+}
+.shop-catalog {
+  padding-bottom: 100px;
+}
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+.category-tabs > button {
+  border: 2px solid var(--ink);
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+.category-tabs > button.active {
+  background: var(--warm-surface);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.catalog-toolbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.search-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: white;
+  padding: 0 16px;
+}
+.search-field > input {
+  border: 0;
+  background: transparent;
+  padding: 12px 0;
+  min-width: 0;
+}
+.search-field > input:focus-visible {
+  outline: none;
+}
+.search-field:focus-within {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 2px;
+}
+.search-field > svg {
+  flex-shrink: 0;
+}
+.search-field.compact {
+  max-width: 360px;
+  width: 100%;
+  border-width: 1.5px;
+}
+.compact > input {
+  font-size: 13px;
+}
+.catalog-toolbar > .filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.sort-label {
+  margin-left: auto;
+}
+.sort-label select {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 20px 10px 5px;
+  font-size: 13px;
+  max-width: 100%;
+}
+.results-count {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 30px 0 25px;
+  gap: 20px;
+}
+.results-count span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.filter-panel {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 22px;
+  margin-top: 20px;
+}
+.range-label {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+.range-label input {
+  accent-color: var(--ink);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px 24px;
+}
+.search-dialog {
+  width: min(680px, calc(100% - 32px));
+}
+.search-dialog > .small {
+  margin-top: 20px;
+}
+.search-results {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.search-results > a {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  min-height: 80px;
+}
+.search-results > a > div {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+}
+.search-results > a > span {
+  flex: 1;
+  font-size: 14px;
+}
+.search-results > a > span > * {
+  display: block;
+}
+.search-results > a > span > small {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.search-results > a > strong {
+  font-size: 13px;
+}

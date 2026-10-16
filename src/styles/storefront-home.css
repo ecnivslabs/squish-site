@@ -1,0 +1,322 @@
+.shop-section {
+  padding-top: 100px;
+  padding-bottom: 82px;
+}
+.featured-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.product-card {
+  min-width: 0;
+}
+.product-visual {
+  border: var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1;
+  transition: box-shadow 0.2s var(--ease);
+}
+.product-visual > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.product-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.product-picture > img,
+.product-picture > .character-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-picture > img {
+  z-index: 1;
+}
+.product-picture.loaded > .character-art {
+  visibility: hidden;
+}
+.product-picture > .character-art {
+  padding: 5%;
+}
+.product-visual .product-picture {
+  transition: transform 0.5s var(--ease);
+}
+.favourite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  width: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  z-index: 2;
+}
+.stock-label {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  border: 2px solid var(--ink);
+  border-radius: 30px;
+  padding: 5px 12px;
+  background: var(--cream);
+  font-size: 13px;
+  font-weight: 700;
+}
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 8px;
+  padding: 20px 2px 0;
+}
+.product-info h3 {
+  font-size: 22px;
+}
+.product-info p {
+  font-size: 13px;
+  margin: 6px 0 12px;
+  line-height: 1.4;
+}
+.product-info strong {
+  font-size: 15px;
+}
+.add-button {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--cream);
+  flex-shrink: 0;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.catalog-note {
+  text-align: center;
+  font-size: 13px;
+  margin: 30px 0 0;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.category-section {
+  padding-block: 0 100px;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.category-tile {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  border: var(--border);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+}
+.category-tile > div {
+  position: relative;
+  z-index: 2;
+  max-width: 60%;
+}
+.category-tile h3 {
+  font-size: 32px;
+  margin: 8px 0 20px;
+  max-width: 130px;
+}
+.category-tile div > span:first-child {
+  font-size: 13px;
+  font-weight: 700;
+}
+.category-tile .product-picture {
+  position: absolute;
+  width: 75%;
+  height: 95%;
+  right: -50px;
+  bottom: -26px;
+  transform: rotate(10deg);
+  transition: transform 0.5s var(--ease);
+}
+.category-tile.animals {
+  background: var(--sage);
+}
+.category-tile.snacks {
+  background: var(--pink);
+}
+.category-tile.pocket {
+  background: var(--lavender);
+}
+.circle-link {
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background: var(--cream);
+}
+.circle-link svg {
+  width: 19px;
+}
+.world-section {
+  background: var(--pink);
+  border-block: 2px solid var(--ink);
+  padding-block: 65px;
+}
+.world-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+.world-visual {
+  height: 475px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.world-character {
+  width: 82%;
+  height: 92%;
+  position: relative;
+  background: var(--cream);
+  border: var(--border);
+  border-radius: 180px 180px 28px 28px;
+  box-shadow: var(--shadow);
+  transform: rotate(-5deg);
+}
+.world-character .product-picture {
+  padding: 0;
+}
+.world-character .product-picture > img {
+  transform: scale(1.05);
+}
+.world-daisy {
+  position: absolute;
+  right: 1%;
+  top: 4%;
+  width: 85px;
+  transform: rotate(10deg);
+}
+.world-spark {
+  position: absolute;
+  left: 2%;
+  bottom: 15%;
+  transform: rotate(-8deg);
+  width: 47px;
+}
+.world-note {
+  background: var(--warm-surface);
+  border: var(--border);
+  border-radius: 20px;
+  box-shadow: 4px 4px 0 var(--ink);
+  padding: 18px 24px;
+  font-family: Fredoka, sans-serif;
+  font-size: 18px;
+  position: absolute;
+  right: -12px;
+  bottom: 4%;
+  transform: rotate(6deg);
+}
+.world-note > svg {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  transform: rotate(-13deg);
+}
+.world-copy {
+  padding-right: 30px;
+}
+.world-copy h2 {
+  font-size: clamp(42px, 4.4vw, 63px);
+  margin: 28px 0;
+  line-height: 1.05;
+}
+.world-copy p {
+  font-size: 15px;
+}
+.world-copy .text-link {
+  margin-top: 8px;
+}
+.home-faq {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 90px;
+  padding-block: 100px;
+}
+.home-faq h2 {
+  margin-bottom: 25px;
+}
+.faq-list details {
+  border-bottom: 2px solid var(--ink);
+  padding-block: 23px;
+}
+.faq-list details:first-child {
+  padding-top: 0;
+}
+.faq-list summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+.faq-list summary > span {
+  font-family: Fredoka, sans-serif;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.faq-list details[open] summary > span {
+  transform: rotate(45deg);
+}
+.faq-list details p {
+  font-size: 14px;
+  margin: 17px 0 5px;
+}
+.faq-list a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.closing-section {
+  position: relative;
+  text-align: center;
+  border: var(--border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  background: var(--warm-surface);
+  padding: 65px 25px;
+  margin-bottom: 100px;
+}
+.closing-section h2 {
+  font-size: clamp(35px, 4vw, 56px);
+  margin-bottom: 30px;
+}
+.closing-section > .daisy {
+  position: absolute;
+  width: 90px;
+  top: 35px;
+  left: 7%;
+  transform: rotate(-15deg);
+}
+.closing-section > .spark {
+  position: absolute;
+  right: 7%;
+  bottom: 45px;
+  width: 50px;
+  transform: rotate(12deg);
+}
